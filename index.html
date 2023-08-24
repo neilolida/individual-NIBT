@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar"  id="home">
+        <div class="wrapper">
+            <div class="nav-logo">
+                D.Dev
+            </div>
+            <div>
+               <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#project">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact">Contact</a>
+                    </li>
+
+               </ul>
+            </div>
+        </div>   
+    </nav>
+
+
+    <main>
+        <div class="wrapper-main">
+            <div class="main-items">
+                <div class="main-text">
+                    <div class="title">        
+                        <h2>Creative Web <br> Designer</h2> 
+                    </div>
+                                       
+                    <p>Hi! I'm <b> Neil</b> a Web Designer. <span class="hand">&#128400</span> <br> Currently, I'm taking Creative Web Design at Northridge 
+                    Institute of Business and Technology - Baguio.
+                    </p>
+                    <br>
+                     <a href="doc1.docx" download="Resume" class="cv-link" target="_blank">
+                        Resume 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about-page" id="about">
+        <div class="about-wrapper">
+            <div class="about-title">
+                <h2>About</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="content-wrapper">
+                    <div class="content-text">       
+                        <p>Since 2022 I started into Web Development. Before, Im working my skils in UI/UX Design to upskill my front-end skills <br> with this I was able to smoothly transition into Full-stack Wen development.</p>
+                        <h2>I'm Web Designer <br> based in Baguio City, Philippines.</h2>
+                    </div>
+                    <div class="content-image">
+                        <img src="./assets//Image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="project-wrapper"  >
+            <h2>Projects</h2>
+            <div class="project-items"  id="project">
+                    <div class="project-item">
+                        <img src="./assets/poster.png" alt="">
+                        <p>Poster project</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="./assets/logo.png" alt="">
+                        <p>Logo project</p>
+                    </div>
+                    <div class="project-item">
+                      <img src="./assets/wireframe.png" alt="">
+                      <p>Wireframe project</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Contact Me-->
+
+    <div class="contact" id="contact">
+        <div class="contact-wrapper">
+            <h2>Contact</h2>
+            <h3>Don't be shy! Hit me up!</h3>
+            <div class="contact-details">
+
+                <div class="contact-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>neilolida00@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>09152952152</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" class="arrow" id="myBtn">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+
+
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>
